@@ -1,0 +1,89 @@
+body {
+    background: #0f0c29;
+
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.register {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    /*background-image: linear-gradient(to right top, #272a30, #2e3743, #334456, #36526b, #36617f, #3f6d8d, #477a9a, #5087a8, #6594b2, #79a2bc, #8cb0c7, #a0bed1);*/
+    background-image: url(/public/images/portal.jpg);
+    background-size: cover;
+
+}
+
+.signup {
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1px 3px 10px #4f4f50;
+}
+
+
+.register span {
+    color: #434952;
+}
+
+#form {
+    max-width: 400px;
+    width: 100vw;
+    margin: 3.5rem;
+}
+
+#form>input,
+.btn {
+    border: #c8ccd1;
+    border-radius: 5px;
+    background-color: #eaecf0;
+    padding: 10px 10px;
+}
+
+#form>input:focus {
+    outline: none;
+}
+
+#form>.btn {
+    background-color: #003049;
+    color: #e9ecef;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    gap: 1em;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.register .signup {
+    margin: auto;
+    padding: 3em 0;
+}
+
+.register .portal-img img {
+    width: 480px;
+    height: 100%;
+    object-fit: contain;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: none;
+}
+
+
+@media screen and (min-width: 860px) {
+    .register .portal-img img {
+        display: initial;
+    }
+}
